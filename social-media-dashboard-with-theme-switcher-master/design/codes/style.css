@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dark:  hsl(230, 17%, 14%);
+  --dark-box: hsl(228, 28%, 20%);
+  
+  --light-text: hsl(0, 0%, 100%);
+  
+}
+.light{
+--dark:  hsl(0, 0%, 100%);
+  --dark-box: hsl(227, 47%, 96%);
+  
+  --light-text: black;
+}
+body{
+  background: var(--dark);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+ 
+}
+.container{
+  width: 80%;
+  margin: 50px 50px;
+padding: 20px;
+  
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.head .social h4{
+
+color: var(--light-text);
+font-size: 20px;
+font-weight: 550;
+}
+.head .social p{
+  color: rgba(128, 128, 128, 0.808);
+  font-size: 11px;
+  font-weight: 600;
+}
+.head .themes{
+  display: flex; 
+  padding-top: 10px
+}
+.head .themes p{
+  position: relative;
+  bottom: 5px;
+}
+.head .themes p img{
+  width: 25px;
+  font-size: 10px;
+  background: transparent;
+}
+.head .togle{
+  width: 35px;
+  height: 15px;
+  background: hsl(146, 68%, 55%);
+  border-radius: 10px;
+  position: relative;
+  margin-left: 7px;
+  
+}
+.head .togle span{
+display: inline-block;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color: hsl(228, 28%, 20%) ;
+position: absolute;
+top: 1px;
+left: 2px;
+}
+.head .move{
+  background: gray;
+}
+.head .move span{
+  left: 20px;
+}
+.Box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;;
+  margin-bottom: 25px;
+}
+.Box .box{
+background-color: var(--dark-box);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+padding: 15px;
+
+}
+.Box .box .handle{
+  display: flex;
+  margin-bottom: px; 
+}
+.Box .box-2 .handle span{
+display: inline-block;
+width: 25px;
+height: 20px;
+
+}.Box .box-2 .handle span img{
+  width: 100%;
+  height: 100%;
+}
+.Box .box-2 .handle span:nth-of-type(2){
+margin-top: 5px;
+}
+
+.Box .box .handle span:nth-of-type(2){
+  color: rgba(128, 128, 128, 0.689);
+  font-size: 12px;
+  align-self: center;
+  margin-left: 3px;
+}
+.box .follow{
+  margin-bottom: 15px;
+}
+.Box .box .follow h3{
+  font-size: 30px;
+  color: var(--light-text);
+  font-weight: 700;
+  font-family: monospace;
+}
+.Box .box .follow p{
+color: rgba(128, 128, 128, 0.776);
+font-family: Noto Sans Linear B;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 7px;
+}
+.Box .box .today{
+  display: flex;
+  margin-right: 4px;
+  text-align: center;
+}
+.box .today p{
+  font-size: 9px;
+  color: hsl(163, 72%, 41%);
+}
+.box .today span{
+  
+  display: flex;
+  /* position: relative;
+  bottom: 1px;
+  left: 0;
+   */
+}
+.box .today span i{
+  display: inline-block;
+  align-self: self-end;
+
+  color: hsl(163, 72%, 41%);
+
+
+}
+.Box .box .red span i{
+  color: red
+}
+.box .red p{
+  color: red
+}
+.Box .box::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+background:  hsl(208, 92%, 53%);
+width: 100%;
+height: 2px;
+
+}
+.Box .box-3::before{
+  background:  hsl(356, 69%, 56%);
+  
+}
+.Box .box-4::before{
+  background:  red;
+  
+}
+.over{
+  margin-bottom: 20px;
+}
+.over h4{
+  color: var(--light-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+.over-view .view{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  
+}
+.over-view .park .page{
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.over-view .park {
+  padding: 15px 20px;
+  border-radius: 2px;
+  background: var(--dark-box);
+
+}
+.over-view .park .page h3{
+font-size: 12px;
+font-weight: 500;
+color: rgba(128, 128, 128, 0.822);
+}
+.over-view .visit{
+  display: flex;
+  justify-content: space-between;
+}
+.over-view .visit h3{
+  color: var(--light-text);
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 23px;
+  
+}
+.over-view .visit p{
+  display: flex;
+}
+
+.over-view .visit p i,span{
+  font-size: 9px;
+  color: hsl(163, 72%, 41%);
+
+}
+.over-view .visit p i{
+  justify-self: flex-end;
+  align-self: self-end;
+display: inline-block;
+margin-right: 5px;
+}
+
+.over-view .visit p span{
+  display: inline-block;
+  align-self: self-end;
+}
+.over-view .visit p i{
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  left: 5px;
+  
+}
+.park .red p i{
+  color: red;
+}
+.park .red span{
+  color: red;
+}
+.item-6 img, .item-5 img{
+  width: 20px;
+  height: 20px;
+}
